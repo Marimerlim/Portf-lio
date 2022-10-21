@@ -1,15 +1,17 @@
 import React from "react";
-import Header from "../components/header/Header";
-import * as S from './StyleHome'
+import * as S from "../styles/HomeStyle";
+import Me from "../img/mama.jpg";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <div>        
-        <S.Foto></S.Foto>
-        <S.H1>Mariana Merlim Rodrigues</S.H1>
-      </div>
-    </>
+    <S.Container>
+      <S.GlobalStyle />
+      <S.Div>
+        <S.H1>Mariana</S.H1>
+      </S.Div>
+      <S.Foto>
+        <S.Me src={Me} alt="Mariana Merlim" />
+      </S.Foto>
+    </S.Container>
   );
 }

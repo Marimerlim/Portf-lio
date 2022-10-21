@@ -1,11 +1,14 @@
 import React from "react";
-import Header from "../components/header/Header";
+import * as S from "../styles/WorkStyle";
 
-export default function Works() {
+export default function Work() {
   return (
-    <>
-      <Header />
-      <h1>Page Works</h1>
-    </>
+    <S.Container>
+      <S.GlobalStyle />
+      <S.Div>
+        <S.H1>Principais Trabalhos</S.H1>
+        <S.P>GitHub</S.P>
+      </S.Div>
+    </S.Container>
   );
 }
